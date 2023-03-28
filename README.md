@@ -25,3 +25,8 @@ https://plotly.com/javascript/indicator/
 
 Below citation used to assist gauge appearing (function does not operate without setTimeout)
 https://www.w3schools.com/jsref/met_win_settimeout.asp
+
+Code to insert background image:
+https://www.w3schools.com/html/html_images_background.asp
+Background Image:
+http://robdunnlab.com/wp-content/uploads/microbes-sem.jpg
