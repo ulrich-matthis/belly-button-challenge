@@ -8,7 +8,7 @@ then use that data to create an interactive dashboard that included the followin
 - A bubble chart that displayed each culture and was sized by presence within each sample
 - (BONUS) an interactve gauge that displayed the wash frequency of each subject
 
-*DEVELOPER NOTE: ALL CODE HAS BEEN WRITTEN WITHIN app.js, bonus.js will return 404 error (This is expected).
+*DEVELOPER NOTE: ALL CODE HAS BEEN WRITTEN WITHIN app.js, bonus.js will return 404 error (This is expected).*
 
 Challenge References:
 
