@@ -34,5 +34,9 @@ https://www.w3schools.com/howto/howto_js_dropdown.asp
 
 Code to insert background image:
 https://www.w3schools.com/html/html_images_background.asp
+
 Background Image:
 http://robdunnlab.com/wp-content/uploads/microbes-sem.jpg
+
+Selector documentation:
+https://www.w3schools.com/w3js/w3js_selectors.asp
