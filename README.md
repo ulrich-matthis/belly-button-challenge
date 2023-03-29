@@ -14,6 +14,9 @@ Challenge References:
 
 Data provided by BootCampSpot and sourced from http://robdunnlab.com/projects/belly-button-biodiversity/
 
+forEach loop syntax:
+https://www.w3schools.com/jsref/jsref_foreach.asp
+
 Bar Chart Documentation:
 https://plotly.com/javascript/bar-charts/
 
@@ -25,6 +28,9 @@ https://plotly.com/javascript/indicator/
 
 Below citation used to assist gauge appearing (function does not operate without setTimeout)
 https://www.w3schools.com/jsref/met_win_settimeout.asp
+
+DropDown Bar code assistance:
+https://www.w3schools.com/howto/howto_js_dropdown.asp
 
 Code to insert background image:
 https://www.w3schools.com/html/html_images_background.asp
