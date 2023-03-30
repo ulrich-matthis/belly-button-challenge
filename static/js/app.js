@@ -40,7 +40,7 @@ function buildMetadata(sample) {
         var result = result_array[0];
 
         var PANEL = d3.select("#sample-metadata");
-
+// Used to update information based upon id selection
         PANEL.html("")
 
 // Displays the above result array in the Demographic Info section of the dashboard
