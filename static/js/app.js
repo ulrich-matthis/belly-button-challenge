@@ -4,30 +4,31 @@ function init() {
     var selector = d3.select("#selDataset");
 // Use D3 to pull name data from JSON
     d3.json("samples.json").then((data) => {
-        var sampleNames = data.names;
+        var sample_names = data.names;
 // Used to verify name collection
         console.log(data)
-// Data available for selector
-        sampleNames.forEach((sample) => {
+// Data points available for selector drop down
+        sample_names.forEach((sample) => {
             selector
                 .append("option")
                 .text(sample)
                 .property("value", sample);
         });
-// Data prepped for later use in charts
-        var firstSample = sampleNames[0];
-        buildCharts(firstSample);
-        buildMetadata(firstSample);
+// Data prepped for later use in charts as well as setting up primary charts on
+// site launch
+        var first_sample = sample_names[0];
+        buildCharts(first_sample);
+        buildMetadata(first_sample);
     });
 
 }
 
 init();
 // Allows new sample to be selected from the drop down box
-function optionChanged(newSample) {
+function optionChanged(new_sample) {
 
-    buildMetadata(newSample);
-    buildCharts(newSample);
+    buildMetadata(new_sample);
+    buildCharts(new_sample);
 
 }
 // Lines below construct the panel for each Demographic Info for the IDs
@@ -35,12 +36,11 @@ function buildMetadata(sample) {
     d3.json("samples.json").then((data) => {
         var metadata = data.metadata;
 
-        var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
-        var result = resultArray[0];
+        var result_array = metadata.filter(sample_obj => sample_obj.id == sample);
+        var result = result_array[0];
 
         var PANEL = d3.select("#sample-metadata");
 
-// Clears prior charts so new selection data can be displayed
         PANEL.html("")
 
 // Displays the above result array in the Demographic Info section of the dashboard
@@ -57,15 +57,15 @@ function buildCharts(sample) {
 
 // List of variables to use within our charts below        
         var samples = data.samples;
-        var desiredSampleNumber = samples.filter(sampleObj => sampleObj.id == sample);
-        var resultArray = data.metadata.filter(sampleObj => sampleObj.id == sample);
+        var desired_sample_number = samples.filter(sample_obj => sample_obj.id == sample);
+        var result_array = data.metadata.filter(sample_obj => sample_obj.id == sample);
 
-        var firstSample = desiredSampleNumber[0];
-        var result = resultArray[0];
+        var first_sample = desired_sample_number[0];
+        var result = result_array[0];
 
-        var otu_ids = firstSample.otu_ids;
-        var otu_labels = firstSample.otu_labels;
-        var sample_values = firstSample.sample_values;
+        var otu_ids = first_sample.otu_ids;
+        var otu_labels = first_sample.otu_labels;
+        var sample_values = first_sample.sample_values;
         var wash_frequency = result.wfreq;
 
 
