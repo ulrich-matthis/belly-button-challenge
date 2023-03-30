@@ -43,3 +43,6 @@ https://www.w3schools.com/w3js/w3js_selectors.asp
 
 On Each Documentation:
 https://www.w3schools.com/jsref/event_onchange.asp
+
+Information from this stack overflow thread helped form the PANEL.html("") line in the app.js file:
+https://stackoverflow.com/questions/1141623/remove-the-contents-of-a-div-using-jquery
