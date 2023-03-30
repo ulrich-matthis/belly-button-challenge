@@ -40,3 +40,6 @@ http://robdunnlab.com/wp-content/uploads/microbes-sem.jpg
 
 Selector documentation:
 https://www.w3schools.com/w3js/w3js_selectors.asp
+
+On Each Documentation:
+https://www.w3schools.com/jsref/event_onchange.asp
